@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="130sp"
+    android:layout_margin="10sp"
+    android:background="@drawable/item_order"
+    android:orientation="horizontal"
+    android:padding="5sp">
+
+    <LinearLayout
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7sp"
+        android:layout_marginRight="7sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/subjectMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3sp"
+            android:ellipsize="end"
+            android:fontFamily="@font/hoyle"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="Offre 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/byMe"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3sp"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_light"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="envoyé par moi"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/contentMessage"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3sp"
+            android:ellipsize="end"
+            android:fontFamily="@font/hoyle"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dateMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:text="2021-12-01"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15sp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

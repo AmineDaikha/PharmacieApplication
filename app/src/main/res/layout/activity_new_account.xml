@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NewAccountActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Nom et Prénom"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Numéro de téléphone"
+                    android:inputType="phone"
+                    android:paddingLeft="20sp" />
+
+                <EditText
+                    android:id="@+id/pharmacieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Nom de la pharmacie"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundededittext"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2.2"
+                        android:gravity="center"
+                        android:hint="Wilaya : "
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/wilaya"
+                        android:layout_width="match_parent"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hoyle"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundededittext"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:hint="Commune : "
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/commune"
+                        android:layout_width="match_parent"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/hoyle"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Prénom"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Nom d'utilisateur"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp" />
+
+                <EditText
+                    android:id="@+id/enter_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Mot de passe"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20sp" />
+
+                <EditText
+                    android:id="@+id/reenter_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundededittext"
+                    android:ems="10"
+                    android:gravity="left|center_vertical"
+                    android:hint="Ressaisissez le mot de passe"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20sp" />
+
+                <android.widget.Button
+                    android:id="@+id/button_new_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="35sp"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="@color/green2"
+                    android:drawableRight="@drawable/ic_playlist_check"
+                    android:paddingLeft="35sp"
+                    android:paddingRight="35sp"
+                    android:text="Inscrire"
+                    android:textColor="@color/white" />
+
+
+                <android.widget.Button
+                    android:id="@+id/to_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="35sp"
+                    android:background="@drawable/roundedbutton"
+                    android:drawableRight="@drawable/ic_return"
+                    android:paddingLeft="35sp"
+                    android:paddingRight="35sp"
+                    android:text="Retour à la connexion"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

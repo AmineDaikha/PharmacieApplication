@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_offres">
+
+    <fragment
+        android:id="@+id/nav_offres"
+        android:name="com.example.pharmacieapplication.ui.offres.OffresFragment"
+        android:label="Les offres"
+        tools:layout="@layout/fragment_offres" />
+
+    <fragment
+        android:id="@+id/nav_fav"
+        android:name="com.example.pharmacieapplication.ui.favorite.FavoriteFragment"
+        android:label="Les favoris"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="com.example.pharmacieapplication.ui.messages.MessagesFragment"
+        android:label="Les messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/nav_my_offres"
+        android:name="com.example.pharmacieapplication.ui.myoffres.MyOffresFragment"
+        android:label="Mes offres"
+        tools:layout="@layout/fragment_my_offres" />
+</navigation>
